@@ -6,11 +6,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.sql.DataSource;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.dity.mybatisplus.mapper")
+@EnableSwagger2
 public class SpringbootMybatisPlusApplication {
 
 	public static void main(String[] args) {
